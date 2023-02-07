@@ -2,7 +2,7 @@
   "name": "school",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://school-management.github.io/frontend-schoolmanagementsystem/",
+  "homepage": "https://basiththottupoyil.github.io/invention/",
   "dependencies": {
     "font-awesome-icons": "^1.6.0",
     "react": "^16.11.0",
@@ -21,12 +21,10 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,10 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
-  },
-  "scripts": {
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
-}
+    "gh-pages": "^2.2.0"
+  }
 }
